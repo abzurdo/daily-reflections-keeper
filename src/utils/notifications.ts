@@ -1,6 +1,5 @@
 
-import { Plugins } from "@capacitor/core";
-const { LocalNotifications } = Plugins;
+import { LocalNotifications } from '@capacitor/local-notifications';
 
 /**
  * Schedules a daily notification at the given hour and minute.
