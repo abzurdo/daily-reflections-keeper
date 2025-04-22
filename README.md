@@ -1,73 +1,88 @@
-# Welcome to your Lovable project
 
-## Project info
+# Daily Reflections Keeper
 
-**URL**: https://lovable.dev/projects/6d687b58-b531-403b-a3c7-7e5d3be1bed6
+## Overview
 
-## How can I edit this code?
+Daily Reflections Keeper is a mobile application designed to help users capture and track their daily thoughts, experiences, and personal growth through guided journaling.
 
-There are several ways of editing your application.
+## Features
 
-**Use Lovable**
+- 📓 Daily journaling with prompts
+- 🔔 Daily notification reminders
+- 📅 Journal entry history
+- 🌟 Simple and intuitive interface
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/6d687b58-b531-403b-a3c7-7e5d3be1bed6) and start prompting.
+## Technologies Used
 
-Changes made via Lovable will be committed automatically to this repo.
+- React
+- TypeScript
+- Capacitor
+- Tailwind CSS
+- Shadcn UI
+- Supabase (optional backend)
 
-**Use your preferred IDE**
+## Prerequisites
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+- Node.js (v18+)
+- npm or bun
+- Android Studio (for Android development)
+- Xcode (for iOS development, macOS only)
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+## Getting Started
 
-Follow these steps:
+### Local Development
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+1. Clone the repository
+```bash
+git clone <your-repository-url>
+cd daily-reflections-keeper
+```
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+2. Install dependencies
+```bash
+npm install
+```
 
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
+3. Start development server
+```bash
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+### Mobile Development
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+#### Android
+```bash
+npx cap add android
+npm run build
+npx cap sync android
+npx cap open android
+```
 
-**Use GitHub Codespaces**
+#### iOS
+```bash
+npx cap add ios
+npm run build
+npx cap sync ios
+npx cap open ios
+```
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+## Configuration
 
-## What technologies are used for this project?
+- Customize notification times in `src/utils/notifications.ts`
+- Adjust app settings in `capacitor.config.ts`
 
-This project is built with:
+## Contributing
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
 
-## How can I deploy this project?
+## License
 
-Simply open [Lovable](https://lovable.dev/projects/6d687b58-b531-403b-a3c7-7e5d3be1bed6) and click on Share -> Publish.
+Distributed under the MIT License.
 
-## Can I connect a custom domain to my Lovable project?
+## Contact
 
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+Project Link: [Your Project URL]
